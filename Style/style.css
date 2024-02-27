@@ -3,3 +3,9 @@
 .font-monserat{
     font-family: "Montserrat", sans-serif;
 }
+.btn-design{
+    padding:7px;
+    background:gray;
+    color:white;
+    border-radius:8px;
+}

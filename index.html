@@ -44,7 +44,7 @@ crossorigin="anonymous"></script>
                 </li>
                 </ul>
               </div>
-              <a class=" text-xl text-white font-semibold">DOCTOR <br>
+              <a class=" text-[22px] text-white font-semibold">DOCTOR <br>
                 <span>Helpline</span> 
               </a>
                 
@@ -53,20 +53,20 @@ crossorigin="anonymous"></script>
               <ul class="space-x-8 flex-row flex justify-center text-white text-2xl items-center text-center">
                 <li>
                      <i class="fa-solid fa-house"></i> <br>
-                    <a class="text-[17px] font-medium cursor-pointer">HOME</a>
+                    <a class="text-[16px] font-medium cursor-pointer">HOME</a>
                     </li>
                   <li>
                     <i class="fa-regular fa-calendar-days"></i> <br>
-                    <a  class="text-[17px] font-medium cursor-pointer">SCHEDULE</a>
+                    <a  class="text-[16px] font-medium cursor-pointer">SCHEDULE</a>
                    
                   </li>
                   <li>
                     <i class="fa-solid fa-bell-concierge"></i> <br>
-                    <a  class="text-[17px] font-meduum cursor-pointer">SERVICE</a>
+                    <a  class="text-[16px] font-meduum cursor-pointer">SERVICE</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-gear"></i> <br>
-                    <a  class="text-[17px] font-medium cursor-pointer">SETTING</a>
+                    <a  class="text-[16px] font-medium cursor-pointer">SETTING</a>
                 </li>
               </ul>
             </div>
@@ -89,7 +89,7 @@ crossorigin="anonymous"></script>
                By doing so, they alleviate suffering, restore health, and empower individuals
                to lead fulfilling lives. We are leading Doctorism firm in Pakistan.</p>
                <h3 class="text-[12px] font-bold">To stay updated with our newsletter.</h3>
-               <a href="#" class="btn w-40 font-bold text-[14px]">Subscriber</a>
+               <a href="#" class="btn w-40 font-bold text-xl">Subscriber</a>
           </div>
           <div class="flex flex-1 py-16 justify-center items-center">
             <img src="image/d.jpg" alt="" class="w-[550px] h-[350px] rounded-lg">
@@ -97,8 +97,8 @@ crossorigin="anonymous"></script>
         </div>
         <!-- Search Area Design -->
     </header>
-    <div class="px-14 -mt-10 shadow-lg">
-      <div class="p-8  bg-white rounded-lg ">
+    <div class="px-14 -mt-12 my-10 shadow-lg">
+      <div class="p-8  bg-white rounded-lg border-b-2 border-gray-400">
         <div class="flex ">
           <div class="flex flex-1">
             <a class="text-xl text-black font-semibold">DOCTOR <br>
@@ -113,27 +113,34 @@ crossorigin="anonymous"></script>
         <div class="flex my-3 gap-4">
           <div class="flex flex-1 items-center input input-gray input-bordered">
             <i class="fa-solid fa-magnifying-glass mr-3 text-gray-400"></i>
-            <input type="text" placeholder="search doctor"
+            <input type="text" placeholder="search doctor"  id="doctor-search"
              class=" w-full max-w-xs" />
           </div>
 
-          <div class="flex flex-1">
+          <div class="flex flex-1 items-center input input-gray input-bordered">
+            <i class="fa-solid fa-location-dot mr-3 text-gray-400"></i>
             <input type="text" placeholder="search location"
-             class="input input-bordered input-gray w-full max-w-xs" />
+             class="max-w-xs" />
           </div>
-          <div class="flex flex-1">
-           
-            <input type="text" placeholder="Type here"
-             class="input input-bordered input-warning w-full max-w-xs" />
+          <div class="flex flex-1 items-center ">
+            
+            <button class="btn bg-[#6C5CE7]
+             text-white text-xl font-semibold w-40" onclick="searchDoctor()">
+              <i class="fa-solid fa-magnifying-glass mr-3"></i>
+              Search</button>
           </div>
         </div>
 
-        <div>
+        <div class="text-black flex mt-3 flew-row gap-5" id="mainContainer" >
 
         </div>
       </div>
     </div>
     <!-- Main Area Design -->
+    <main class="container mx-auto my-16">
+
+    </main>
     <!-- Footer Area Design -->
+    <script src="js/script.js"></script>
 </body>
 </html>
